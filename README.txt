@@ -8,4 +8,4 @@ I used HTML, SCSS, JavaScript, Node, Express, Webpack(Build Tools), Service Work
 
 I used Visual Studio Code to write the code. You can install the Visual Studio Code here: https://code.visualstudio.com/
 
-
+For the Examiner: I found the length of stay as the project addon. Allthough initially i was trying my utmost to get the country info from REST Countries API.
