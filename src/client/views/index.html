@@ -1,37 +1,58 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        
-    </head>
-    <body>
-        <!-- <div class="bigb">
-            <h1 class="titles">Your Daily Weather Report</h1>
-            <div class="side">
-                <div class= "box-1">
-                
+
+<head>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <div class="firsts">
+        <video id="video1" autoplay loop muted>
+            <source src="../media/video/Saigon - 14385.mp4" type="video/mp4" >
+        </video>
+        <div id="ho" class="hovercontent">
+            <div class="ho1">
+                <div class="text">
+                    <h1 class="title"> Travel App </h1>
+                    <label id="lf" for="cityinput"> Enter the city you wish to visit: </label>
+                    <input id="cityinput" type="text" placeholder="Enter city here"></input>
+                    <br><br>
+
+                    <label for="vacationdate"> Enter vacation date: </label>
+                    <input id="vacationdate" type="date"></input>
+                    <br><br>
+                    <label for="returndate"> Enter return date: </label>
+                    <input id="returndate" type="date"></input>
+                    <br>
+                    <br>
+                    <button id="button" class="button1"> Travel Generate!</button>
+
+                    <div id="hoi2" class="hoi2">
+                        <br>
+                        <hr><br>
+                        <label for="leng">Length of vacation(Days): </label>
+                        <textarea id="leng" rows="1"></textarea>
+                        <br><br>
+                        <p><u>Weather Report:</u></p>
+
+                        <label for="weatherdata">Temperature(celcius):</label>
+                        <textarea id="weatherdata" rows="1"></textarea>
+                        <br>
+                        <label for="weatherdata2">Sky:</label>
+                        <textarea id="weatherdata2" rows="1"></textarea><br>
+                        <br>
+                        <br> <br>
+                    </div>
                 </div>
-                <div class='side1'>
-                        <label for="texting" id ="labelt" class="tte"></label>
-                        <textarea id="texting" class="temp" rows:"1" columns:"1"></textarea>
+                <div id="picture" class="pic0">
+                    <img id="pic1" class="p1" src="#" alt="pic of area you're going to" width="500" height="300px"></img>
                 </div>
             </div>
-            <div id ='entryholder' class="box-2"> -->
-          
-            </div>
-            <label id="lf" for="cityinput"> Enter the city you wish to visit: </label>
-            <input id="cityinput" type="text" placeholder="Enter city here"></input>
-
-       
-            <label for="vacationdate"> Enter vacation date: </label>
-            <input id="vacationdate" type="date"></input>
-                        
-            <label for="returndate"> Enter return date: </label>
-            <input id="returndate" type="date"></input>
-
-            <button id="button" class="button1"> Weather Generate!</button>
 
         </div>
-    </body>
+    </div>
+  
+</body>
+
 </html>

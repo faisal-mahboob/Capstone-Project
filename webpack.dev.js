@@ -1,32 +1,42 @@
-const path = require("path")
-const webpack = require("webpack")
-const HtmlWebPackPlugins = require('html-webpack-plugin');
-const {CleanWebpackPlugin}=require('clean-webpack-plugin');
+
+const WorkboxPlugin = require('workbox-webpack-plugin');
+const path = require('path');
+const webpack = require('webpack');
+const HtmlWebPackPlugin = require('html-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 module.exports = {
     entry: './src/client/index.js',
     mode: 'development',
-    devtool:'source-map',
     output: {
         libraryTarget: 'var',
         library: 'Client'
     },
     module: {
         rules: [
-                {
-            test: '/\.js$/',
-            exclude: /node_modules/,
-            loader: "babel-loader"
-                },
-                {
-            test:/\.scss$/,
-            use:['style-loader','css-loader','sass-loader']
-                }
+            {
+                test: '/\.js$/',
+                exclude: /node_modules/,
+                loader: "babel-loader"
+            },
+            {
+                test: /\.scss$/,
+                use: ['style-loader', 'css-loader', 'sass-loader']
+            },
+            {
+                test: /\.html$/,
+                use: "html-loader"
+            },
+            {
+                test: /\.mp4$/,
+                use: 'file-loader?name=videos/[name].[ext]',
+            }
         ]
     },
     plugins: [
-        new HtmlWebPackPlugins({
-            template:"./src/client/views/index.html",
-            filename:"./index.html",
+        new HtmlWebPackPlugin({
+            template: "./src/client/views/index.html",
+            filename: "./index.html",
         }),
         new CleanWebpackPlugin({
             // Simulate the removal of files
@@ -36,6 +46,10 @@ module.exports = {
             // Automatically remove all unused webpack assets on rebuild
             cleanStaleWebpackAssets: true,
             protectWebpackAssets: false
+        }),
+        new WorkboxPlugin.GenerateSW({
+            maximumFileSizeToCacheInBytes: 1024 * 1024 * 100,
         })
-    ]
+    ],
+
 }
