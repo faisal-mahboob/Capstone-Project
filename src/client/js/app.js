@@ -39,7 +39,7 @@ export function first(e) {
       var longit = bata.geonames[0].lng;
       var latit = bata.geonames[0].lat;
       var country = bata.geonames[0].countryName;
-      var cityvacat = bata.geonames[0].name;
+      var cityvacat = bata.geonames[0].adminName1;
 
       
       //using console.log to see i get the right results
@@ -108,7 +108,7 @@ export function first(e) {
 
           }) //closing of previous .then
       } //closing of else
-      return Promise.all([cityvacat, country]);                                //once more using promise.all to pass two variables to the next then promise in this chain 
+      return cityvacat;                                //once more using promise.all to pass two variables to the next then promise in this chain 
     }).then(function (cityvacat) {                                              // setting up the fetch call to get pictrue data from teh paxabayAPI
       //let city=document.getElementById("cityinput").value;
       console.log(cityvacat);
@@ -155,7 +155,7 @@ export function first(e) {
           let katam = new Date(kat);
           katam.getTime();                                                        //it takes 86,400,000 milliseconds for a day. I used it to find how many days are there between current day and vacation date.
           let difference = ((katam - begin) / 86400000);                          //here i set up the equation to see (vacateion day - current day)/86400000, the result will be a number of days between vacation date and the current day
-          let s = document.getElementById("leng")
+          let s = document.getElementById("leng");
           s.innerText = difference;
         })
 

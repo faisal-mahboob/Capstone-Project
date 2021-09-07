@@ -108,7 +108,7 @@ app.post('/pixabayData', async (req, res) => {
 
     //console.log(`This is the vacation start: ${start}`);
     //console.log(`This is the return: ${finish}`)
-    const response = await fetch(`https://pixabay.com/api/?key=23223032-495ce91a058e3a57765110a18&q=${coun}&image_type=photo`, { method: "POST" });
+    const response = await fetch(`https://pixabay.com/api/?key=${process.env.Pixabay_API}&q=${coun}&image_type=photo`, { method: "POST" });
     try {
         let fata = await response.json();
         console.log(fata);
