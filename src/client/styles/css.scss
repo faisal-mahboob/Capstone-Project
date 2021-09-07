@@ -119,3 +119,167 @@ textarea{
 img,.p1{
     opacity:0.6;
 }
+
+@media(max-width:280px){
+    body{
+        font-size:0.70em;
+    }
+    .ho1{
+        display:block;
+    }
+    #pic1{
+        max-width:230px;
+        max-height:120px;
+    }
+    #picture{
+        margin-top:0px;
+        margin-left:0px;
+        
+    }
+    .pic1{
+        max-width:230px;
+        max-height:120px;
+    }
+}
+
+
+@media(min-width:281px) and (max-width:320px){
+    body{
+        font-size:0.70em;
+    }
+    .ho1{
+        display:block;
+    }
+    #pic1{
+        max-width:250px;
+        max-height:120px;
+    }
+    #picture{
+        margin-top:0px;
+        margin-left:0px;
+        
+    }
+    .pic1{
+        max-width:250px;
+        max-height:120px;
+    }
+}
+
+@media (min-width:321px) and (max-width:375px) {
+    body{
+        font-size:0.75em;
+    }
+    
+    .ho1{
+      display:block;
+    }
+    
+    #pic1{
+        max-width:280px;
+        max-height:165px;
+    }
+
+    #picture{
+        margin-left:0px;
+        max-height:165px;
+    }
+
+    .pic1{
+        max-width:280px;
+        max-height:165px;
+    }
+}
+
+
+@media(min-width:376px) and (max-width:450px) {
+    .ho1{
+      display:block;
+    }
+    
+    #pic1{
+        max-width:300px;
+        max-height:165px;
+    }
+
+    #picture{
+        margin-left:0px;
+        max-height:165px;
+    }
+
+    .pic1{
+        max-width:300px;
+        max-height:165px;
+    }
+}
+
+@media(min-width:451px) and (max-width:800px) {
+    body{
+        font-size:1.4em;
+    }
+    input,textarea{
+        font-size:1.2em;
+    }
+    
+    .ho1{
+      display:block;
+    }
+    
+    #pic1{
+        max-width:300px;
+        max-height:200px;
+    }
+
+    #picture{
+        margin-left:0px;
+        margin-top:0px;
+
+        max-height:200px;
+    }
+
+    .pic1{
+        max-width:300px;
+        max-height:200px;
+    }
+
+    button{
+        font-size:1.2em;
+        line-height:1.1em
+    }
+}
+
+
+@media(min-width:801px) and (max-width:1000px){
+    body{
+        font-size:1.4em;
+    }
+    input,textarea{
+        font-size:1.2em;
+    }
+}
+
+
+@media(min-width:1024px) and (max-width:1070px){
+    body{
+        font-size:1.4em;
+    }
+    input,textarea{
+        font-size:1.3em;
+    }
+
+    #picture{
+        margin-left:7px;
+    }
+    button{
+        font-size:1.2em;
+        line-height:1.1em;
+    }
+}
+
+@media(width:540px){
+    body{
+        font-size:0.99em;
+    }
+    input,textarea{
+        font-size:0.99em;
+    }
+}
