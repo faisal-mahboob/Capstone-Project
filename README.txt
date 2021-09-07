@@ -1,9 +1,11 @@
 Description
 
-The purpose of the project was to get information from a WEB API and to create a local server and circulate information between them.
-There is a server.js file. There is index.html, app.js and css.css files inside the website folder.
+Hi, This is my Capstone Project to my Front End Web Developer Nanodegree program. In this project i used three webAPI's to get information from each and present information the browser. All the API's are dependant on each other in the project. I connected them using the .then promise chain. 
 
-Most work done was in Javascript with some css and html. You can clone the project in your local gitHub desktop to tweak the code.
+The project is a Travel app. The user enters the city they are travelling to and the vacation start date and return day. I use this to find the latitude and longitude of the city using geonamesAPI. Then i use the latitude and longitude of the city to get the current or forcast weather information of the city depending on the time of vacation of the person. I then get a picture of the city using the pixabayAPI using the countryName data retrieved earlier on from the geonamesAPI. 
 
-In this project i used Visual Studio Code to write and debugg the code. You can install Visual Studio Code here: https://code.visualstudio.com/
+I used HTML, SCSS, JavaScript, Node, Express, Webpack(Build Tools), Service Workers (To make the page work offline) and Jest(for function tests) in this project. 
+
+I used Visual Studio Code to write the code. You can install the Visual Studio Code here: https://code.visualstudio.com/
+
 
